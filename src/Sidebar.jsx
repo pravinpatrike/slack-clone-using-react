@@ -20,7 +20,12 @@ function Sidebar() {
         
     </div>
         <SidebarOption Icon={<InsertCommentIcon/>} title="Threads"/>
-        <SidebarOption  title="youtube"/>
+        <SidebarOption Icon={<InsertCommentIcon/>} title="Saved items"/>
+        <SidebarOption Icon={<InsertCommentIcon/>} title="Channel browser"/>
+        <SidebarOption Icon={<InsertCommentIcon/>} title="people & user groups"/>
+        <SidebarOption Icon={<InsertCommentIcon/>} title="Apps"/>
+    <hr/>
+    <SidebarOption Icon={<InsertCommentIcon/>} title="Channels"/>
     </div>
   )
 }
