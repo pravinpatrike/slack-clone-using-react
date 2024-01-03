@@ -33,7 +33,7 @@ function App() {
               <Routes>
                 <Route path="room/:roomId" element={<Chat />}>
                 </Route>
-                <Route path="/" element={<h1>Welcome</h1>}></Route>
+                <Route path="/" element={<h1>Welcome to the App! </h1>}></Route>
               </Routes>
               {/* React router -> chat screen*/}
             </div>

@@ -13,7 +13,7 @@ function Header() {
   return (
     <div className='header'>
         <div className="header__left">
-          <img
+          <Avatar
           className='header__avatar'
           alt={user?.displayName}
           src={user?.photoURL} />
@@ -27,7 +27,7 @@ function Header() {
           <input placeholder='Search Pravin Patrike' />
         </div>
         <div className="header__right">
-          <HelpOutlineOutlinedIcon />
+          <HelpOutlineOutlinedIcon className='mui' />
         </div>
     </div>
   )

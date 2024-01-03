@@ -51,6 +51,10 @@ function Sidebar() {
         <SidebarOption key={channel.id} title={channel.name} id={channel.id} />
       ))}
 
+      <div className='credits'>
+        <h4>Made with ❤️ by Pravin Patrike</h4>
+      </div>
+
 
 
     </div>

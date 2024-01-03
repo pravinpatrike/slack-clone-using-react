@@ -5,6 +5,7 @@ import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import db from './firebase';
 import Message from './Message';
+import ChatInput from './ChatInput';
 
 
 
@@ -32,7 +33,8 @@ function Chat() {
     }
   }, [roomId])
 
-  console.log(roomMessages);
+  // console.log(roomDetails);
+  // console.log(roomId);
 
 
 
@@ -59,8 +61,8 @@ function Chat() {
       </div>
 
       <div className="chat__messages">
-        {roomMessages.map( ({message, timestamp, user, userImage } ) => (
-          
+        {roomMessages.map(({ message, timestamp, user, userImage }) => (
+
           <Message
             message={message}
             timestamp={timestamp}
@@ -69,6 +71,10 @@ function Chat() {
           />
         ))}
       </div>
+      
+
+        <ChatInput channelName={roomDetails?.name} channelId={roomId} />
+      
     </div>
   )
 }
