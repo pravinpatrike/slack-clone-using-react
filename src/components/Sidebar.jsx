@@ -6,10 +6,12 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import CreateIcon from '@mui/icons-material/Create';
 import InsertCommentIcon from '@mui/icons-material/InsertComment';
 import AddIcon from '@mui/icons-material/Add';
+import { useStateValue } from '../StateProvider';
 
 
 function Sidebar() {
   const [Channels, setChannels] = useState([])
+  const [{user}] = useStateValue();
 
   useEffect(() => {
     db.collection('rooms').onSnapshot((snapshot) =>
@@ -29,7 +31,7 @@ function Sidebar() {
           <h2>programmers hub</h2>
           <h3>
             <FiberManualRecordIcon />
-            Pravin Patrike
+            {user?.displayName}
           </h3>
         </div>
         <CreateIcon />

@@ -42,3 +42,10 @@
     display: flex;
     align-items: flex-end;
 }
+
+.header__avatar{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
